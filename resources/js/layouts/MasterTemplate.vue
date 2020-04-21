@@ -1,13 +1,10 @@
 <template>
     <div>
         <navbar-component></navbar-component>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <router-view></router-view>
-                </div>
-            </div>
+        <div style="min-height:80vh;">
+            <router-view></router-view>
         </div>
+        <footer-component></footer-component>
     </div>
 </template>
 <script>

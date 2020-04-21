@@ -18,4 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/googleplace', 'JenosizeController@FindPlace');
+Route::post('/googleplace', 'JenosizeController@FindPlace');
+
+Route::post('/series', 'JenosizeController@Series');
